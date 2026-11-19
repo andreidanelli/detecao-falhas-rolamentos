@@ -1,0 +1,347 @@
+{
+ "casos_locais_xgb_todos": {
+  "acerto_falha": 11,
+  "acerto_saudavel": 11,
+  "erro": 12,
+  "rolamento12_falha": 12
+ },
+ "casos_locais_xgb_sem_temp": {
+  "acerto_falha": 16,
+  "acerto_saudavel": 11,
+  "erro": 12,
+  "rolamento12_falha": 12
+ },
+ "casos_locais_xgb_todos_temp_primeiro": {
+  "acerto_falha": 16,
+  "acerto_saudavel": 16,
+  "erro": 6,
+  "rolamento12_falha": 12
+ },
+ "casos_locais_tabpfn_todos": {
+  "acerto_falha": 17,
+  "acerto_saudavel": 2,
+  "rolamento12_falha": 12
+ },
+ "casos_locais_ae_xgb": {
+  "acerto_falha": 16,
+  "acerto_saudavel": 11,
+  "erro": 12,
+  "rolamento12_falha": 12
+ },
+ "embeddings_interpretacao": {
+  "emb_01": {
+   "acel_pico": 0.87,
+   "acel_pico_a_pico": 0.87,
+   "acel_rms": 0.86
+  },
+  "emb_04": {
+   "acel_rms": 0.89,
+   "acel_pico_a_pico": 0.88,
+   "acel_pico": 0.88
+  },
+  "emb_06": {
+   "acel_rms": 0.9,
+   "acel_pico_a_pico": 0.85,
+   "acel_pico": 0.85
+  },
+  "emb_05": {
+   "acus_pico_a_pico": 0.83,
+   "acus_pico": 0.8,
+   "acel_rms": 0.78
+  }
+ },
+ "H1": {
+  "xgb_todos": {
+   "top5": [
+    "acel_rms",
+    "acel_pico",
+    "acel_pico_a_pico"
+   ],
+   "atributos_usados": 3,
+   "melhor_posicao_temperatura": null,
+   "temp_no_top3": false,
+   "fracao_shap_temperatura": 0.0
+  },
+  "xgb_todos_temp_primeiro": {
+   "top5": [
+    "temp_media",
+    "acel_rms",
+    "acel_pico",
+    "acel_pico_a_pico",
+    "acus_curtose"
+   ],
+   "atributos_usados": 5,
+   "melhor_posicao_temperatura": 1,
+   "temp_no_top3": true,
+   "fracao_shap_temperatura": 0.7745021752218446
+  },
+  "tabpfn_todos": {
+   "top5": [
+    "temp_media",
+    "acel_rms",
+    "acel_pico",
+    "acel_pico_a_pico",
+    "acel_energia_13000_17000Hz"
+   ],
+   "atributos_usados": 24,
+   "melhor_posicao_temperatura": 1,
+   "temp_no_top3": true,
+   "fracao_shap_temperatura": 0.39156139134584805
+  },
+  "spearman_rankings_xgb_tabpfn": 0.5203765579018044
+ },
+ "wilcoxon": [
+  {
+   "hipotese": "H1",
+   "a": "XGBoost (com temp.)",
+   "b": "XGBoost (sem temp.)",
+   "metrica": "f1_macro",
+   "media_a": 0.9408,
+   "media_b": 0.9408,
+   "dif_media": 0.0,
+   "n_pares": 20,
+   "pares_diferentes": 0,
+   "p": 1.0
+  },
+  {
+   "hipotese": "H1",
+   "a": "XGBoost (com temp.)",
+   "b": "XGBoost (sem temp.)",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 1.0,
+   "dif_media": 0.0,
+   "n_pares": 20,
+   "pares_diferentes": 0,
+   "p": 1.0
+  },
+  {
+   "hipotese": "H1",
+   "a": "XGBoost (com temp.)",
+   "b": "XGBoost (sem temp.)",
+   "metrica": "mcc",
+   "media_a": 0.904,
+   "media_b": 0.904,
+   "dif_media": 0.0,
+   "n_pares": 20,
+   "pares_diferentes": 0,
+   "p": 1.0
+  },
+  {
+   "hipotese": "H1",
+   "a": "TabPFN (com temp.)",
+   "b": "TabPFN (sem temp.)",
+   "metrica": "f1_macro",
+   "media_a": 0.9918,
+   "media_b": 0.9342,
+   "dif_media": 0.0576,
+   "n_pares": 20,
+   "pares_diferentes": 5,
+   "p": 0.077
+  },
+  {
+   "hipotese": "H1",
+   "a": "TabPFN (com temp.)",
+   "b": "TabPFN (sem temp.)",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 0.9921,
+   "dif_media": 0.0079,
+   "n_pares": 20,
+   "pares_diferentes": 2,
+   "p": 0.4246
+  },
+  {
+   "hipotese": "H1",
+   "a": "TabPFN (com temp.)",
+   "b": "TabPFN (sem temp.)",
+   "metrica": "mcc",
+   "media_a": 0.9848,
+   "media_b": 0.8944,
+   "dif_media": 0.0903,
+   "n_pares": 20,
+   "pares_diferentes": 5,
+   "p": 0.077
+  },
+  {
+   "hipotese": "H1 (apoio)",
+   "a": "Reg. Logística (com temp.)",
+   "b": "Reg. Logística (sem temp.)",
+   "metrica": "f1_macro",
+   "media_a": 0.8778,
+   "media_b": 0.8719,
+   "dif_media": 0.0058,
+   "n_pares": 20,
+   "pares_diferentes": 11,
+   "p": 0.4617
+  },
+  {
+   "hipotese": "H1 (apoio)",
+   "a": "Reg. Logística (com temp.)",
+   "b": "Reg. Logística (sem temp.)",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 0.9976,
+   "dif_media": 0.0024,
+   "n_pares": 20,
+   "pares_diferentes": 4,
+   "p": 0.2544
+  },
+  {
+   "hipotese": "H1 (apoio)",
+   "a": "Reg. Logística (com temp.)",
+   "b": "Reg. Logística (sem temp.)",
+   "metrica": "mcc",
+   "media_a": 0.8068,
+   "media_b": 0.7977,
+   "dif_media": 0.0091,
+   "n_pares": 20,
+   "pares_diferentes": 11,
+   "p": 0.4617
+  },
+  {
+   "hipotese": "H2",
+   "a": "XGBoost (só vibração)",
+   "b": "Autoencoder + XGBoost",
+   "metrica": "f1_macro",
+   "media_a": 0.9408,
+   "media_b": 0.9584,
+   "dif_media": -0.0177,
+   "n_pares": 20,
+   "pares_diferentes": 6,
+   "p": 0.8917
+  },
+  {
+   "hipotese": "H2",
+   "a": "XGBoost (só vibração)",
+   "b": "Autoencoder + XGBoost",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 0.9919,
+   "dif_media": 0.0081,
+   "n_pares": 20,
+   "pares_diferentes": 1,
+   "p": 0.6767
+  },
+  {
+   "hipotese": "H2",
+   "a": "XGBoost (só vibração)",
+   "b": "Autoencoder + XGBoost",
+   "metrica": "mcc",
+   "media_a": 0.904,
+   "media_b": 0.9325,
+   "dif_media": -0.0285,
+   "n_pares": 20,
+   "pares_diferentes": 6,
+   "p": 0.8917
+  },
+  {
+   "hipotese": "sensibilidade",
+   "a": "XGBoost (com temp., temp. 1ª coluna)",
+   "b": "XGBoost (com temp.)",
+   "metrica": "f1_macro",
+   "media_a": 0.9333,
+   "media_b": 0.9408,
+   "dif_media": -0.0074,
+   "n_pares": 20,
+   "pares_diferentes": 10,
+   "p": 0.6346
+  },
+  {
+   "hipotese": "sensibilidade",
+   "a": "XGBoost (com temp., temp. 1ª coluna)",
+   "b": "XGBoost (com temp.)",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 1.0,
+   "dif_media": 0.0,
+   "n_pares": 20,
+   "pares_diferentes": 0,
+   "p": 1.0
+  },
+  {
+   "hipotese": "sensibilidade",
+   "a": "XGBoost (com temp., temp. 1ª coluna)",
+   "b": "XGBoost (com temp.)",
+   "metrica": "mcc",
+   "media_a": 0.8943,
+   "media_b": 0.904,
+   "dif_media": -0.0096,
+   "n_pares": 20,
+   "pares_diferentes": 10,
+   "p": 0.6346
+  },
+  {
+   "hipotese": "contexto",
+   "a": "XGBoost (com temp.)",
+   "b": "TabPFN (com temp.)",
+   "metrica": "f1_macro",
+   "media_a": 0.9408,
+   "media_b": 0.9918,
+   "dif_media": -0.0511,
+   "n_pares": 20,
+   "pares_diferentes": 5,
+   "p": 0.077
+  },
+  {
+   "hipotese": "contexto",
+   "a": "XGBoost (com temp.)",
+   "b": "TabPFN (com temp.)",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 1.0,
+   "dif_media": 0.0,
+   "n_pares": 20,
+   "pares_diferentes": 0,
+   "p": 1.0
+  },
+  {
+   "hipotese": "contexto",
+   "a": "XGBoost (com temp.)",
+   "b": "TabPFN (com temp.)",
+   "metrica": "mcc",
+   "media_a": 0.904,
+   "media_b": 0.9848,
+   "dif_media": -0.0808,
+   "n_pares": 20,
+   "pares_diferentes": 5,
+   "p": 0.077
+  },
+  {
+   "hipotese": "contexto",
+   "a": "XGBoost (com temp.)",
+   "b": "Reg. Logística (com temp.)",
+   "metrica": "f1_macro",
+   "media_a": 0.9408,
+   "media_b": 0.8778,
+   "dif_media": 0.063,
+   "n_pares": 20,
+   "pares_diferentes": 11,
+   "p": 0.4391
+  },
+  {
+   "hipotese": "contexto",
+   "a": "XGBoost (com temp.)",
+   "b": "Reg. Logística (com temp.)",
+   "metrica": "auc_pr",
+   "media_a": 1.0,
+   "media_b": 1.0,
+   "dif_media": 0.0,
+   "n_pares": 20,
+   "pares_diferentes": 0,
+   "p": 1.0
+  },
+  {
+   "hipotese": "contexto",
+   "a": "XGBoost (com temp.)",
+   "b": "Reg. Logística (com temp.)",
+   "metrica": "mcc",
+   "media_a": 0.904,
+   "media_b": 0.8068,
+   "dif_media": 0.0972,
+   "n_pares": 20,
+   "pares_diferentes": 11,
+   "p": 0.4391
+  }
+ ]
+}

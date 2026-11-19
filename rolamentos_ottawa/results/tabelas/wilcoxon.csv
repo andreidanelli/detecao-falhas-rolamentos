@@ -1,0 +1,22 @@
+hipotese,a,b,metrica,media_a,media_b,dif_media,n_pares,pares_diferentes,p
+H1,XGBoost (com temp.),XGBoost (sem temp.),f1_macro,0.9407504937458855,0.9407504937458855,0.0,20,0,1.0
+H1,XGBoost (com temp.),XGBoost (sem temp.),auc_pr,1.0,1.0,0.0,20,0,1.0
+H1,XGBoost (com temp.),XGBoost (sem temp.),mcc,0.9039704405128599,0.9039704405128599,0.0,20,0,1.0
+H1,TabPFN (com temp.),TabPFN (sem temp.),f1_macro,0.9918210727790511,0.9342485780107598,0.05757249476829125,20,5,0.07698581147096224
+H1,TabPFN (com temp.),TabPFN (sem temp.),auc_pr,1.0,0.9920965913822334,0.00790340861776665,20,2,0.42458041863779383
+H1,TabPFN (com temp.),TabPFN (sem temp.),mcc,0.984764945084114,0.8944271928869112,0.09033775219720294,20,5,0.07698581147096224
+H1 (apoio),Reg. Logística (com temp.),Reg. Logística (sem temp.),f1_macro,0.8777911743649904,0.8719493394177562,0.005841834947234298,20,11,0.4617029435563411
+H1 (apoio),Reg. Logística (com temp.),Reg. Logística (sem temp.),auc_pr,1.0,0.9976185364571784,0.002381463542821721,20,4,0.25437905749010636
+H1 (apoio),Reg. Logística (com temp.),Reg. Logística (sem temp.),mcc,0.8067646208535908,0.7977137396678635,0.009050881185727217,20,11,0.4617029435563411
+H2,XGBoost (só vibração),Autoencoder + XGBoost,f1_macro,0.9407504937458855,0.9584346452147938,-0.0176841514689084,20,6,0.8916642598139379
+H2,XGBoost (só vibração),Autoencoder + XGBoost,auc_pr,1.0,0.9919491525423728,0.00805084745762712,20,1,0.6766573217164245
+H2,XGBoost (só vibração),Autoencoder + XGBoost,mcc,0.9039704405128599,0.9324825447583185,-0.028512104245458608,20,6,0.8916642598139379
+sensibilidade,"XGBoost (com temp., temp. 1ª coluna)",XGBoost (com temp.),f1_macro,0.9333333333333333,0.9407504937458855,-0.0074171604125521096,20,10,0.6346290159934569
+sensibilidade,"XGBoost (com temp., temp. 1ª coluna)",XGBoost (com temp.),auc_pr,1.0,1.0,0.0,20,0,1.0
+sensibilidade,"XGBoost (com temp., temp. 1ª coluna)",XGBoost (com temp.),mcc,0.8943375672974063,0.9039704405128599,-0.009632873215453475,20,10,0.6346290159934569
+contexto,XGBoost (com temp.),TabPFN (com temp.),f1_macro,0.9407504937458855,0.9918210727790511,-0.051070579033165565,20,5,0.07695729727522246
+contexto,XGBoost (com temp.),TabPFN (com temp.),auc_pr,1.0,1.0,0.0,20,0,1.0
+contexto,XGBoost (com temp.),TabPFN (com temp.),mcc,0.9039704405128599,0.984764945084114,-0.08079450457125426,20,5,0.07695729727522246
+contexto,XGBoost (com temp.),Reg. Logística (com temp.),f1_macro,0.9407504937458855,0.8777911743649904,0.06295931938089512,20,11,0.43905407932308016
+contexto,XGBoost (com temp.),Reg. Logística (com temp.),auc_pr,1.0,1.0,0.0,20,0,1.0
+contexto,XGBoost (com temp.),Reg. Logística (com temp.),mcc,0.9039704405128599,0.8067646208535908,0.09720581965926914,20,11,0.43905407932308016

@@ -1,0 +1,73 @@
+familia,rolamento,acerto_saudavel,acerto_falha,condicao
+esfera,11,1.0,0.65,Reg. Logística (com temp.)
+esfera,12,1.0,0.46,Reg. Logística (com temp.)
+gaiola,16,1.0,1.0,Reg. Logística (com temp.)
+gaiola,17,1.0,1.0,Reg. Logística (com temp.)
+pista_externa,6,1.0,0.11,Reg. Logística (com temp.)
+pista_externa,7,1.0,1.0,Reg. Logística (com temp.)
+pista_interna,1,1.0,1.0,Reg. Logística (com temp.)
+pista_interna,2,1.0,1.0,Reg. Logística (com temp.)
+esfera,11,1.0,0.63,Reg. Logística (sem temp.)
+esfera,12,1.0,0.0,Reg. Logística (sem temp.)
+gaiola,16,1.0,1.0,Reg. Logística (sem temp.)
+gaiola,17,1.0,1.0,Reg. Logística (sem temp.)
+pista_externa,6,1.0,0.52,Reg. Logística (sem temp.)
+pista_externa,7,1.0,1.0,Reg. Logística (sem temp.)
+pista_interna,1,0.99,1.0,Reg. Logística (sem temp.)
+pista_interna,2,1.0,1.0,Reg. Logística (sem temp.)
+esfera,11,1.0,1.0,XGBoost (com temp.)
+esfera,12,1.0,0.1,XGBoost (com temp.)
+gaiola,16,1.0,1.0,XGBoost (com temp.)
+gaiola,17,1.0,1.0,XGBoost (com temp.)
+pista_externa,6,1.0,1.0,XGBoost (com temp.)
+pista_externa,7,1.0,1.0,XGBoost (com temp.)
+pista_interna,1,1.0,1.0,XGBoost (com temp.)
+pista_interna,2,1.0,1.0,XGBoost (com temp.)
+esfera,11,1.0,1.0,XGBoost (sem temp.)
+esfera,12,1.0,0.1,XGBoost (sem temp.)
+gaiola,16,1.0,1.0,XGBoost (sem temp.)
+gaiola,17,1.0,1.0,XGBoost (sem temp.)
+pista_externa,6,1.0,1.0,XGBoost (sem temp.)
+pista_externa,7,1.0,1.0,XGBoost (sem temp.)
+pista_interna,1,1.0,1.0,XGBoost (sem temp.)
+pista_interna,2,1.0,1.0,XGBoost (sem temp.)
+esfera,11,1.0,1.0,XGBoost (só vibração)
+esfera,12,1.0,0.1,XGBoost (só vibração)
+gaiola,16,1.0,1.0,XGBoost (só vibração)
+gaiola,17,1.0,1.0,XGBoost (só vibração)
+pista_externa,6,1.0,1.0,XGBoost (só vibração)
+pista_externa,7,1.0,1.0,XGBoost (só vibração)
+pista_interna,1,1.0,1.0,XGBoost (só vibração)
+pista_interna,2,1.0,1.0,XGBoost (só vibração)
+esfera,11,1.0,1.0,Autoencoder + XGBoost
+esfera,12,0.94,0.6,Autoencoder + XGBoost
+gaiola,16,1.0,1.0,Autoencoder + XGBoost
+gaiola,17,1.0,1.0,Autoencoder + XGBoost
+pista_externa,6,1.0,1.0,Autoencoder + XGBoost
+pista_externa,7,1.0,0.83,Autoencoder + XGBoost
+pista_interna,1,1.0,1.0,Autoencoder + XGBoost
+pista_interna,2,1.0,1.0,Autoencoder + XGBoost
+esfera,11,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+esfera,12,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+gaiola,16,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+gaiola,17,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+pista_externa,6,1.0,0.0,"XGBoost (com temp., temp. 1ª coluna)"
+pista_externa,7,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+pista_interna,1,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+pista_interna,2,1.0,1.0,"XGBoost (com temp., temp. 1ª coluna)"
+esfera,11,1.0,1.0,TabPFN (com temp.)
+esfera,12,1.0,0.87,TabPFN (com temp.)
+gaiola,16,1.0,1.0,TabPFN (com temp.)
+gaiola,17,1.0,1.0,TabPFN (com temp.)
+pista_externa,6,1.0,1.0,TabPFN (com temp.)
+pista_externa,7,1.0,1.0,TabPFN (com temp.)
+pista_interna,1,1.0,1.0,TabPFN (com temp.)
+pista_interna,2,1.0,1.0,TabPFN (com temp.)
+esfera,11,1.0,1.0,TabPFN (sem temp.)
+esfera,12,1.0,0.02,TabPFN (sem temp.)
+gaiola,16,0.99,1.0,TabPFN (sem temp.)
+gaiola,17,1.0,1.0,TabPFN (sem temp.)
+pista_externa,6,1.0,1.0,TabPFN (sem temp.)
+pista_externa,7,1.0,1.0,TabPFN (sem temp.)
+pista_interna,1,1.0,1.0,TabPFN (sem temp.)
+pista_interna,2,1.0,1.0,TabPFN (sem temp.)

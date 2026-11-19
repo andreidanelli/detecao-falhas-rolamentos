@@ -1,0 +1,27 @@
+\begin{tabular}{lllllrl}
+\toprule
+Hip. & A & B & Métrica & A$-$B & Pares $\neq$ & $p$ \\
+\midrule
+H1 & XGBoost (com temp.) & XGBoost (sem temp.) & F1-macro & +0.000 & 0 & 1.000 \\
+H1 & XGBoost (com temp.) & XGBoost (sem temp.) & AUC-PR & +0.000 & 0 & 1.000 \\
+H1 & XGBoost (com temp.) & XGBoost (sem temp.) & MCC & +0.000 & 0 & 1.000 \\
+H1 & TabPFN (com temp.) & TabPFN (sem temp.) & F1-macro & +0.058 & 5 & 0.077 \\
+H1 & TabPFN (com temp.) & TabPFN (sem temp.) & AUC-PR & +0.008 & 2 & 0.425 \\
+H1 & TabPFN (com temp.) & TabPFN (sem temp.) & MCC & +0.090 & 5 & 0.077 \\
+H1 (apoio) & Reg. Logística (com temp.) & Reg. Logística (sem temp.) & F1-macro & +0.006 & 11 & 0.462 \\
+H1 (apoio) & Reg. Logística (com temp.) & Reg. Logística (sem temp.) & AUC-PR & +0.002 & 4 & 0.254 \\
+H1 (apoio) & Reg. Logística (com temp.) & Reg. Logística (sem temp.) & MCC & +0.009 & 11 & 0.462 \\
+H2 & XGBoost (só vibração) & Autoencoder + XGBoost & F1-macro & -0.018 & 6 & 0.892 \\
+H2 & XGBoost (só vibração) & Autoencoder + XGBoost & AUC-PR & +0.008 & 1 & 0.677 \\
+H2 & XGBoost (só vibração) & Autoencoder + XGBoost & MCC & -0.029 & 6 & 0.892 \\
+sensibilidade & XGBoost (com temp., temp. 1ª coluna) & XGBoost (com temp.) & F1-macro & -0.007 & 10 & 0.635 \\
+sensibilidade & XGBoost (com temp., temp. 1ª coluna) & XGBoost (com temp.) & AUC-PR & +0.000 & 0 & 1.000 \\
+sensibilidade & XGBoost (com temp., temp. 1ª coluna) & XGBoost (com temp.) & MCC & -0.010 & 10 & 0.635 \\
+contexto & XGBoost (com temp.) & TabPFN (com temp.) & F1-macro & -0.051 & 5 & 0.077 \\
+contexto & XGBoost (com temp.) & TabPFN (com temp.) & AUC-PR & +0.000 & 0 & 1.000 \\
+contexto & XGBoost (com temp.) & TabPFN (com temp.) & MCC & -0.081 & 5 & 0.077 \\
+contexto & XGBoost (com temp.) & Reg. Logística (com temp.) & F1-macro & +0.063 & 11 & 0.439 \\
+contexto & XGBoost (com temp.) & Reg. Logística (com temp.) & AUC-PR & +0.000 & 0 & 1.000 \\
+contexto & XGBoost (com temp.) & Reg. Logística (com temp.) & MCC & +0.097 & 11 & 0.439 \\
+\bottomrule
+\end{tabular}
